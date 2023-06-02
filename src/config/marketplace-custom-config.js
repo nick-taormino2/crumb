@@ -35,6 +35,32 @@
 
 export const filters = [
   {
+    id: 'category',
+    label: 'Category',
+    type: 'SelectSingleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_category'],
+    config: {
+      // Schema type is enum for SelectSingleFilter
+      schemaType: 'enum',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'cookies', label: 'Cookies' },
+        { key: 'cakes', label: 'Cakes' },
+        { key: 'pies', label: 'Pies' },
+        { key: 'breads', label: 'Breads' },
+        { key: 'jams_jellies', label: 'Jams & Jellies' },
+        { key: 'honey', label: 'Honey' },
+        { key: 'granolla', label: 'Granolla' },
+        { key: 'coffee', label: 'Coffee' },
+      ],
+    },
+  },
+  {
     id: 'price',
     label: 'Price',
     type: 'PriceFilter',
