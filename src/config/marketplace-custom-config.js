@@ -89,6 +89,23 @@ export const filters = [
     // You can turn on/off ordering by distance from config.js file.
     config: {},
   },
+  {
+    id: 'tags',
+    label: 'Tags',
+    type: 'SelectMultipleFilter',
+    group: 'primary',
+    queryParamNames:['tags'],
+    config: {
+
+      options: [
+        { key: 'gluten-free', label: 'Gluten free' },
+        { key: 'peanut-free', label: 'Peanut free' },
+        { key: 'dairy-free', label: 'Dairy free' },
+        { key: 'vegan', label: 'Vegan' },
+        { key: 'vegetarian', label: 'Vegetarian' },
+      ],
+    },
+  },
 
   // Here is an example of multi-enum search filter.
   //
