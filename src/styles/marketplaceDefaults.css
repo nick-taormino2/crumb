@@ -16,7 +16,7 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #be9c6b; /* hsl(260, 63%, 46%) */
+  --marketplaceColor: #cd7700; /* hsl(260, 63%, 46%) */
   --marketplaceColorLight: #9ca49c; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
   --marketplaceColorDark: #6c746e; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
 
